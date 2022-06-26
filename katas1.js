@@ -28,7 +28,7 @@ function oddsToTwenty() {
    return numerosImpares;
 }
 
-console.log(evensToTwenty())
+console.log(oddsToTwenty())
 
 function multiplesOfFive() {
   let multiplos = []
@@ -41,14 +41,14 @@ function multiplesOfFive() {
 console.log(multiplesOfFive())
 
 function squareNumbers() {
-    
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
-    
+  let numeroQuadrado = []
+  for(let numQuadrado = 1; numQuadrado*numQuadrado < 100; numQuadrado+=1){
+    numeroQuadrado.push(numQuadrado*numQuadrado)
+  }
+  return numeroQuadrado
 }
 
-//call function squareNumbers
+console.log(squareNumbers())
 
 function countingBackwards() {
   let contandoDeTras = []
@@ -95,10 +95,11 @@ function multiplesOfFiveBackwards() {
 console.log(multiplesOfFiveBackwards())
 
 function squareNumbersBackwards() {
-    
-   /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let numQuadradoTras = []
+  for(let numQuadrado = 100; numQuadrado*numQuadrado > 1; numQuadrado-=1){
+    numQuadradoTras.push(numQuadrado*numQuadrado)
+  }
+  return numQuadradoTras
 }
 
-//call function squareNumbersBackwards
+console.log(squareNumbersBackwards())
